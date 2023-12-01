@@ -1,0 +1,262 @@
+
+.main-view {
+  @font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: TAEBAEKmilkyway;
+  background: linear-gradient(
+                  135deg,
+                  rgba(30, 30, 30, 0.7) 20%,
+                  rgba(130, 130, 230, 0.5) 50%,
+                  rgba(30, 30, 30, 0.7) 80%
+  );
+
+  .active {
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(#6cbee8, .4);
+    animation: pulse 1.8s ease-out infinite;
+
+    .pulse-ring {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(#7947c5, .4);
+      animation: pulse 1.8s ease-out infinite;
+
+      @for $i from 1 to 3 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * -0.5s;
+        }
+      }
+    }
+
+    button {
+      opacity: 0.7;
+    }
+  }
+
+  .main-navigation {
+    position: fixed;
+    top: 60%;
+    left: -60px;
+    z-index: 2;
+
+    .profile-remote {
+      margin: 60px auto 0;
+      width: 200px;
+      color: black;
+      font-size: 20px;
+
+      .btn-custom {
+        position: relative;
+        height: 27px;
+        width: 27px;
+        margin: 20px auto 0;
+
+        button {
+          height: 27px;
+          width: 27px;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+          background: linear-gradient(#6cbee8, #7947c5, black);
+
+        }
+
+        .satellite {
+          position: absolute;
+          height: 10px;
+          width: 10px;
+          box-shadow: 0 25px 5px #fff,
+                  0 25px 5px #78FFCD;
+          border-radius: 50%;
+          left: 30%;
+          top: 30%;
+          transform: translate(-30%, -30%);
+          display: none;
+        }
+
+        &:hover .satellite {
+          display: block;
+          animation: satellite-spin 5s linear infinite;
+        }
+
+        animation: breathe 1.5s ease-in-out infinite alternate;
+
+        @for $i from 1 to 5 {
+          &:nth-child(#{$i}) {
+            animation-delay: $i * -0.5s;
+          }
+        }
+      }
+    }
+
+  }
+
+
+  .main-box {
+
+    .main-header {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      height: 50px;
+      width: 50%;
+      content: '';
+      background: rgba(0,0,0,0.2);
+      border: none;
+      border-radius: 20px;
+    }
+
+    .main-body {
+      position: relative;
+      overflow:hidden;
+      left: 0;
+
+      .fade-out {
+        right: 200px;
+        opacity: 0;
+        transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s linear;
+      }
+
+      .fade-in {
+        right: 0;
+        opacity: 1;
+        transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s linear;
+      }
+
+      @media all and (max-width: 1024px) { // media-max home
+
+        .portfolio-home {
+          position: relative;
+          height: 550px;
+          margin: 50px 0 50px 0;
+
+        }
+
+      } // media-max home
+
+      @media all and (min-width: 1024px) { // media-min home
+
+        .portfolio-home {
+          position: relative;
+          height: 950px;
+          margin: 50px 0 50px 0;
+
+        }
+
+      } // media-min home
+
+      @media all and (max-width: 1024px) { // media-max about
+
+        .portfolio-about {
+          position: relative;
+          height: 550px;
+          margin: 50px 0 50px 0;
+
+        }
+
+      } // media-max about
+
+      @media all and (min-width: 1024px) { // media-min about
+
+        .portfolio-about {
+          position: relative;
+          height: 950px;
+          margin: 50px 0 50px 0;
+
+        }
+
+      } // media-min about
+
+      @media all and (max-width: 1024px) { // media-max experience
+
+      } // media-max experience
+
+      @media all and (min-width: 1024px) { // media-min experience
+
+        .portfolio-experience {
+          position: relative;
+          height: 950px;
+          margin: 50px 0 50px 0;
+
+        }
+
+      } // media-min experience
+
+      @media all and (max-width: 1024px) { // media-max project
+
+      } // media-max project
+
+      @media all and (min-width: 1024px) { // media-min project
+
+        .portfolio-project {
+          position: relative;
+          height: 1700px;
+          margin: 50px 0 50px 0;
+
+        }
+
+      } // media-min project
+
+      @media all and (max-width: 1024px) { // media-max contact
+
+      } // media-max contact
+
+      @media all and (min-width: 1024px) { // media-min contact
+
+        .portfolio-contact {
+          position: relative;
+          height: 750px;
+          margin: 50px 0 50px 0;
+
+        }
+
+      } // media-min contact
+
+
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.9);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 25px rgba(white, 0);
+  }
+  100% {
+    transform: scale(.9);
+    box-shadow: 0 0 0 0 rgba(white, 0);
+  }
+}
+
+@keyframes breathe {
+  from {
+    transform: translate(0, -10%);
+  }
+
+  to {
+    transform: translate(0, 10%);
+  }
+}
+
+@keyframes satellite-spin {
+  0%   { transform: rotate(0deg);   }
+  100% { transform: rotate(360deg); }
+}

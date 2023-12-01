@@ -1,0 +1,121 @@
+
+
+@media all and (max-width: 1024px) { // max
+
+  .portfolio-about-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media all and (max-width: 490px) {
+      width: auto;
+    }
+    width: 480px;
+    margin: 5rem auto 5rem;
+    text-align: left;
+
+    .portfolio-about-content {
+
+      .portfolio-about-title {
+        line-height: 1.5;
+
+        p {
+          font-size: 27px;
+          font-weight: lighter;
+          opacity: 0.7;
+        }
+
+      }
+
+      .portfolio-about-text {
+        position: relative;
+
+        .portfolio-about-box {
+
+          .about-text-key {
+            font-size: 25px;
+
+          }
+
+          .about-text-value {
+            font-size: 18px;
+            line-height: 1.3;
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+} // max
+
+@media all and (min-width: 1024px) { // min
+
+  .portfolio-about-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 1020px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5;
+    color: white;
+
+    .portfolio-about-content {
+
+      .portfolio-about-title {
+        font-size: 50px;
+        font-weight: bold;
+
+
+        p {
+          border-left: 5px solid black;
+          font-size: 27px;
+          font-weight: lighter;
+          padding-left: 10px;
+          opacity: 0.7;
+        }
+      }
+
+      .portfolio-about-text {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .portfolio-about-box {
+          margin: 13px;
+          padding: 13px;
+          border: 2px solid black;
+          border-radius: 15px;
+
+          .about-text-key {
+            font-size: 30px;
+            font-weight: bold;
+            opacity: 0.7;
+          }
+
+          .about-text-value {
+            width: 450px;
+            font-size: 17px;
+            line-height: 1.5;
+            word-wrap: break-word;
+          }
+
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+} // min

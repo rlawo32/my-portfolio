@@ -1,0 +1,211 @@
+
+@function multiple-box-shadow($n) {
+  $value: '#{random(3700)}px #{random(3700)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(3700)}px #{random(3700)}px #FFF';
+  }
+  @return unquote($value);
+}
+
+.stars1 {
+  width: 1px;
+  height: 1px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  animation: animStar 50s linear infinite;
+  box-shadow: multiple-box-shadow(700);
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 3700px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: multiple-box-shadow(700);
+  }
+}
+
+.stars2 {
+  width: 2px;
+  height: 2px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  animation: animStar 100s linear infinite;
+  box-shadow: multiple-box-shadow(200);
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 3700px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: multiple-box-shadow(200);
+  }
+
+}
+
+.stars3 {
+  width: 3px;
+  height: 3px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  animation: animStar 150s linear infinite;
+  box-shadow: multiple-box-shadow(100);
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 3700px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: multiple-box-shadow(100);
+  }
+
+}
+
+.planet-sun {
+  $size: 50;
+  position: absolute;
+  top: -3%;
+  left: -9%;
+  transform: translate(9%, 3%);
+  height: $size+vh;
+  max-height: $size+vw;
+  width: $size+vh;
+  max-width: $size+vw;
+  background: radial-gradient( rgba(255,255,50,1), rgba(220,180,25,1) );
+  filter: drop-shadow(0 0 10vh rgba(255,180,120,1)) drop-shadow(0 0 2.5vh rgba(220,180,25,1));
+  animation: rotate 80s linear 0s infinite;
+  border-radius: 50%;
+}
+
+.planet-mercury {
+  $size: 4;
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  right: 20%;
+  transform: translate(-20%,-20%);
+  height: $size+vh;
+  max-height: $size+vw;
+  width: $size+vh;
+  max-width: $size+vw;
+  background: radial-gradient( #333,#444 );
+  filter: drop-shadow(0 0 2vh #fff);
+  animation: rotate 80s linear 0s infinite;
+  border-radius: 50%;
+}
+
+.planet-venus {
+  $size: 8;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-15%,-50%);
+  height: $size+vh;
+  max-height: $size+vw;
+  width: $size+vh;
+  max-width: $size+vw;
+  background: radial-gradient(#de8438,#8f481c);
+  filter: drop-shadow(0 0 10vh #de8438) drop-shadow(0 0 2.5vh #8f481c);
+  animation: rotate 80s linear 0s infinite;
+  overflow: hidden;
+  border-radius: 50%;
+
+  .venus-cloud {
+    $size: 1.25;
+    position: absolute;
+    top: 20%;
+    left: -20%;
+    height: $size+vh;
+    max-height: $size+vw;
+    width: $size*4+vh;
+    max-width: $size*4+vw;
+    background: rgba(120,20,40,.2);
+    border-radius: 50%;
+
+    &:first-child {
+      top: 45%;
+      left: 50%;
+    }
+
+    &:last-child {
+      top: 70%;
+    }
+  }
+}
+
+.planet-mars {
+  $size: 6;
+  position: absolute;
+  top: 80%;
+  right: 15%;
+  transform: translate(-15%,-80%);
+  height: $size+vh;
+  max-height: $size+vw;
+  width: $size+vh;
+  max-width: $size+vw;
+  background: radial-gradient(#de8438,#8f481c);
+  filter: drop-shadow(0 0 10vh #de8438) drop-shadow(0 0 2.5vh #8f481c);
+  animation: rotate 80s linear 0s infinite;
+  overflow: hidden;
+  border-radius: 50%;
+
+  .mars-crater {
+    $size: 1.05;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    height: $size+vh;
+    width: $size+vh;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 5px #163040, 0 0 7px #63eed2 ;
+    opacity: 0.3;
+
+    &:nth-child(1) {
+      height: $size*1.5+vh;
+      width: $size*1.5+vh;
+      top: 25%;
+      left: 60%;
+    }
+
+    &:nth-child(2) {
+      height: $size*0.7+vh;
+      width: $size*0.7+vh;
+      top: 50%;
+      left: 20%;
+    }
+
+    &:nth-child(3) {
+      height: $size*1.2+vh;
+      width: $size*1.2+vh;
+      top: 70%;
+      left: 40%;
+    }
+  }
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px)
+  }
+  to {
+    transform: translateY(-1000px)
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

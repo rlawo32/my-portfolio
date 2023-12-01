@@ -1,0 +1,161 @@
+
+
+@media all and (max-width: 1024px) { // max
+
+  .portfolio-home-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 405px;
+    margin: 5rem auto 5rem;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+
+    .portfolio-home-content {
+
+      .portfolio-home-title {
+
+      }
+
+    }
+
+    svg {
+      height: 210px;
+      width: 405px;
+      text {
+        fill:transparent;
+        stroke-dasharray: 246px;
+        animation: stroke 1s linear;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    @for $i from 1 to 33 {
+      svg text:nth-child(#{$i}) {
+        animation-delay: 0s + ($i * 0.2s);
+      }
+    }
+
+    @for $i from 1 to 33 {
+      svg text:nth-child(#{$i}) {
+        @if ($i < 7) {
+          transform: translate(($i - 1) * -30px, 20%);
+        }
+
+        @if ($i >= 7 and $i < 9) {
+          transform: translate(($i - 7) * -30px, 5%);
+        }
+
+        @if ($i >= 9 and $i < 13) {
+          transform: translate(($i - 5.5) * -18px, 5%);
+        }
+
+        @if ($i == 13) {
+          transform: translate(($i - 5) * -18px, 5%);
+        }
+
+        @if ($i >= 14 and $i < 19) {
+          transform: translate(($i - 4) * -17px, 5%);
+        }
+
+        @if ($i >= 19 and $i < 23) {
+          transform: translate(($i - 10.5) * -30px, 5%);
+        }
+
+        @if ($i >= 23 and $i < 26) {
+          transform: translate(($i - 11) * -30px, 5%);
+        }
+
+        @if ($i >= 26) {
+          transform: translate(($i - 26) * -30px, -10%);
+        }
+      }
+    }
+
+  }
+} // max
+
+@media all and (min-width: 1024px) { // min
+
+  .portfolio-home-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 1000px;
+    margin: 5rem auto 5rem;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+
+    .portfolio-home-content {
+
+      .portfolio-home-title {
+      }
+
+
+    }
+
+    svg {
+      height: 210px;
+      width: 660px;
+      text {
+        fill:transparent;
+        stroke-dasharray: 246px;
+        animation: stroke 1s linear;
+        animation-fill-mode: forwards;
+
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 0.9em;
+        text-shadow: 0 2px 5px rgba(25, 41, 48, 0.1),
+        0 4px 5px rgba(25, 41, 48, 0.1),
+        0 6px 5px rgba(25, 41, 48, 0.1),
+        0 8px 5px rgba(25, 41, 48, 0.1),
+        0 10px 5px rgba(25, 41, 48, 0.1),
+        0 12px 5px rgba(25, 41, 48, 0.1),
+        0 14px 5px rgba(25, 41, 48, 0.1),
+        0 16px 5px rgba(25, 41, 48, 0.1),
+        0 18px 5px rgba(25, 41, 48, 0.1),
+        0 20px 5px rgba(25, 41, 48, 0.1);
+      }
+    }
+
+    @for $i from 1 to 33 {
+      svg text:nth-child(#{$i}) {
+        animation-delay: 0s + ($i * 0.2s);
+      }
+    }
+  }
+
+
+}
+
+
+
+@keyframes stroke {
+  0%   {
+    stroke:white;
+    stroke-width: 3px;
+    stroke-dashoffset: 326px;
+  }
+  70% {
+    fill: transparent;
+  }
+  98% {
+    stroke:white;
+    stroke-width: 3px;
+  }
+  100% {
+    fill: white;
+    stroke-dashoffset: 0px;
+  }
+}
+
+
+@keyframes orbit {
+  0%   { transform: rotate(0deg);   }
+  100% { transform: rotate(360deg); }
+}
