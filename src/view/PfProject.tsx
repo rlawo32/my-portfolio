@@ -188,7 +188,7 @@ const pfProject = () => {
                                 </div>
                             </div>
                             <div className="project-text-link">
-                                <Link to="" className="link">
+                                <Link to="https://rlawo32.github.io/my-portfolio/" className="link">
                                     <div className="link-button">
                                         배포 사이트 이동하기
                                         <div className="dot">
@@ -196,7 +196,7 @@ const pfProject = () => {
                                         </div>
                                     </div>
                                 </Link>
-                                <Link to="" className="link">
+                                <Link to="https://github.com/rlawo32/my-portfolio.git" className="link">
                                     <div className="link-button">
                                         GITHUB 이동하기
                                         <div className="dot">
