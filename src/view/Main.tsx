@@ -13,15 +13,12 @@ import WaterWave from "./WaterWave";
 
 const Main = () => {
 
-    const pfArray = useRef<any>([]);
-    const btnArray = useRef<any>([]);
-    const pfBox = useRef<any>();
-    // const btnProject = useRef<HTMLDivElement>(null);
+    const pfArray:any = useRef<any>([]);
+    const btnArray:any  = useRef<any>([]);
+    const pfBox:any  = useRef<any>();
 
-    const onClickScrollView = (e:any) => {
-        // pfArray.current[e].className = pfArray.current[e].className.replace(' fade-out', ' fade-in');
+    const onClickScrollView = (e:number) => {
         pfArray.current[e].scrollIntoView({ behavior: "smooth", block: "start"});
-        // pfBox.current.style.left = '-200px';
     }
 
     useEffect(() => {
@@ -57,21 +54,15 @@ const Main = () => {
                 <div className="profile-remote">
                     <div ref={btn => (btnArray.current[0] = btn)} className="btn-custom">
                         <button onClick={() => onClickScrollView(0)}>
-                            {/*HOME*/}
+                            <div className="satellite"></div>
                         </button>
-                        <div className="satellite">
-
-                        </div>
                         <div className="pulse-ring"></div>
                         <div className="pulse-ring"></div>
                         <div className="pulse-ring"></div>
                     </div>
                     <div ref={btn => (btnArray.current[1] = btn)} className="btn-custom">
                         <button onClick={() => onClickScrollView(1)}>
-                            {/*ABOUT*/}
-                            <div className="satellite">
-
-                            </div>
+                            <div className="satellite"></div>
                         </button>
                         <div className="pulse-ring"></div>
                         <div className="pulse-ring"></div>
@@ -79,21 +70,15 @@ const Main = () => {
                     </div>
                     <div ref={btn => (btnArray.current[2] = btn)} className="btn-custom">
                         <button onClick={() => onClickScrollView(2)}>
-                            {/*SKILL*/}
+                            <div className="satellite"></div>
                         </button>
-                        <div className="satellite">
-
-                        </div>
                         <div className="pulse-ring"></div>
                         <div className="pulse-ring"></div>
                         <div className="pulse-ring"></div>
                     </div>
                     <div ref={btn => (btnArray.current[3] = btn)} className="btn-custom">
                         <button onClick={() => onClickScrollView(3)}>
-                            {/*LINK*/}
-                            <div className="satellite">
-
-                            </div>
+                            <div className="satellite"></div>
                         </button>
                         <div className="pulse-ring"></div>
                         <div className="pulse-ring"></div>
@@ -101,10 +86,7 @@ const Main = () => {
                     </div>
                     <div ref={btn => (btnArray.current[4] = btn)} className="btn-custom">
                         <button onClick={() => onClickScrollView(4)}>
-                            {/*CONTACT*/}
-                            <div className="satellite">
-
-                            </div>
+                            <div className="satellite"></div>
                         </button>
                         <div className="pulse-ring"></div>
                         <div className="pulse-ring"></div>

@@ -14,7 +14,7 @@ const pfExperience = () => {
 
         const sliderList:any = [];
 
-        for(let i=0; i<sliderItemTitle.length; i++) {
+        for(let i:number=0; i<sliderItemTitle.length; i++) {
             sliderList.push(<SwiperSlide key={i} className="experience-item">
                 <div className="item-title">
                     {sliderItemTitle[i]}

@@ -18,7 +18,7 @@ const pfProject = () => {
         //     </div>);
         // }
 
-        for(let i=0; i<=5; i++) {
+        for(let i:number=0; i<=5; i++) {
             slideList.push(
                 <SwiperSlide key={i}>
                     <img src={path + '/images/repProject' + (i) +'.png'} />
@@ -32,7 +32,7 @@ const pfProject = () => {
     const projectImageSlider2 = () => {
         const slideList:any = [];
 
-        for(let i=0; i<=2; i++) {
+        for(let i:number=0; i<=2; i++) {
             slideList.push(
                 <SwiperSlide key={i}>
                     <img src={path + '/images/piProject' + (i) +'.png'} />
@@ -47,7 +47,7 @@ const pfProject = () => {
         const skillItem:string[] = ['Java', 'React', 'JavaScript', 'AWS', 'MySQL', 'CSS3', 'HTML5', 'NodeJs'];
         const skillList:any = [];
 
-        for(let i=0; i<skillItem.length; i++) {
+        for(let i:number=0; i<skillItem.length; i++) {
             skillList.push(<span key={i}>{skillItem[i]}</span>);
         }
 
@@ -58,7 +58,7 @@ const pfProject = () => {
         const skillItem:string[] = ['React', 'TypeScript', 'CSS3', 'HTML5'];
         const skillList:any = [];
 
-        for(let i=0; i<skillItem.length; i++) {
+        for(let i:number=0; i<skillItem.length; i++) {
             skillList.push(<span key={i}>{skillItem[i]}</span>);
         }
 

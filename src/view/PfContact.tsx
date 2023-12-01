@@ -3,7 +3,6 @@ import './PfContact.scss'
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub as github} from "@fortawesome/free-brands-svg-icons";
-// import {faEnvelope as email} from "@fortawesome/free-regular-svg-icons";
 import {faPhone as phone, faEnvelope as email, faBlog as blog} from "@fortawesome/free-solid-svg-icons";
 
 const pfContact = () => {
