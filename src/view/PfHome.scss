@@ -23,7 +23,7 @@
 
     svg {
       height: 210px;
-      width: 405px;
+      width: 295px;
       text {
         fill:transparent;
         stroke-dasharray: 246px;
@@ -48,28 +48,20 @@
           transform: translate(($i - 7) * -30px, 5%);
         }
 
-        @if ($i >= 9 and $i < 13) {
-          transform: translate(($i - 5.5) * -18px, 5%);
+        @if ($i >= 9 and $i < 12) {
+          transform: translate(($i - 6.8) * -30px, 5%);
         }
 
-        @if ($i == 13) {
-          transform: translate(($i - 5) * -18px, 5%);
+        @if ($i >= 12 and $i < 16) {
+          transform: translate(($i - 6.5) * -30px, 5%);
         }
 
-        @if ($i >= 14 and $i < 19) {
-          transform: translate(($i - 4) * -17px, 5%);
+        @if ($i >= 16 and $i < 19) {
+          transform: translate(($i - 6.2) * -30px, 5%);
         }
 
-        @if ($i >= 19 and $i < 23) {
-          transform: translate(($i - 10.5) * -30px, 5%);
-        }
-
-        @if ($i >= 23 and $i < 26) {
-          transform: translate(($i - 11) * -30px, 5%);
-        }
-
-        @if ($i >= 26) {
-          transform: translate(($i - 26) * -30px, -10%);
+        @if ($i >= 19 and $i < 25) {
+          transform: translate(($i - 19) * -30px, -10%);
         }
       }
     }

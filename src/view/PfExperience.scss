@@ -1,6 +1,92 @@
 
 @media all and (max-width: 1024px) { // max
 
+  .portfolio-experience-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    @media all and (max-width: 550px) {
+      width: 300px;
+    }
+    width: 450px;
+    margin: 0 auto;
+    color: white;
+
+    .portfolio-experience-content {
+
+      .portfolio-experience-title {
+        text-align: left;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .portfolio-experience-text {
+
+        .experience-list {
+          padding: 0 60px 0 60px;
+          height: 320px;
+          @media all and (max-width: 550px) {
+            width: 300px;
+          }
+          width: 450px;
+
+          .swiper-button-prev {
+            color: yellow;
+            opacity: 0.1;
+
+            &:hover {
+              color: yellow;
+              opacity: 1;
+            }
+          }
+
+          .swiper-button-next {
+            color: yellow;
+            opacity: 0.1;
+
+            &:hover {
+              color: yellow;
+              opacity: 1;
+            }
+          }
+
+          .experience-item {
+            margin: auto;
+            padding-left: 10px;
+            height: 110px;
+            color: black;
+            text-align: left;
+            border-left: 3px solid black;
+
+            .item-title {
+              font-size: 35px;
+              font-weight: bold;
+              margin-bottom: 15px;
+            }
+
+            .item-date {
+              font-size: 18px;
+              font-weight: bolder;
+              color: #163040;
+              margin-bottom: 15px;
+            }
+
+            .item-content {
+              font-size: 20px;
+              color: white;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+
+
+    }
+
+  }
+
 } // max
 
 @media all and (min-width: 1024px) { // min

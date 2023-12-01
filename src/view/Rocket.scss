@@ -3,8 +3,15 @@
 
 .rocket {
   position: fixed;
-  top: 70%;
-  left: 93%;
+  @media all and (max-width: 1024px) {
+    top: 70%;
+    left: 83%;
+  }
+
+  @media all and (min-width: 1024px) {
+    top: 70%;
+    left: 93%;
+  }
   width: 70px;
   height: 110px;
   transform-origin: top center;

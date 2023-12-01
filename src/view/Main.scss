@@ -164,7 +164,7 @@
 
         .portfolio-about {
           position: relative;
-          height: 550px;
+          height: 1250px;
           margin: 50px 0 50px 0;
 
         }
@@ -184,6 +184,13 @@
 
       @media all and (max-width: 1024px) { // media-max experience
 
+        .portfolio-experience {
+          position: relative;
+          height: 950px;
+          margin: 50px 0 50px 0;
+
+        }
+
       } // media-max experience
 
       @media all and (min-width: 1024px) { // media-min experience
@@ -198,6 +205,13 @@
       } // media-min experience
 
       @media all and (max-width: 1024px) { // media-max project
+
+        .portfolio-project {
+          position: relative;
+          height: 2000px;
+          margin: 50px 0 50px 0;
+
+        }
 
       } // media-max project
 
@@ -214,13 +228,20 @@
 
       @media all and (max-width: 1024px) { // media-max contact
 
+        .portfolio-contact {
+          position: relative;
+          height: 750px;
+          margin: 50px 0 50px 0;
+
+        }
+
       } // media-max contact
 
       @media all and (min-width: 1024px) { // media-min contact
 
         .portfolio-contact {
           position: relative;
-          height: 750px;
+          height: 550px;
           margin: 50px 0 50px 0;
 
         }

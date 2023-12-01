@@ -43,10 +43,16 @@ const pfExperience = () => {
                     <Swiper className="experience-list"
                             modules={[Navigation, Pagination]}
                             speed={1000}
-                            slidesPerView={2}
-                            spaceBetween={30}
+                            slidesPerView={1}
+                            spaceBetween={50}
                             navigation
-                            pagination={{ clickable: true }}>
+                            pagination={{ clickable: true }}
+                            breakpoints={{
+                                1024: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30
+                                }
+                            }}>
                         {experienceSlider()}
                     </Swiper>
 
