@@ -99,7 +99,7 @@ const pfProject = () => {
                                         ReP
                                     </div>
                                     <div className="project-text-date">
-                                        2023.06 ~ -ing &nbsp;/&nbsp; 1명
+                                        2023.07 ~ -ing &nbsp;/&nbsp; 1명
                                     </div>
                                 </div>
                                 <div className="project-text-skill">
