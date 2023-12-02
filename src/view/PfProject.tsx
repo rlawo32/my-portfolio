@@ -108,7 +108,7 @@ const pfProject = () => {
                             </div>
                             <div className="project-text-body">
                                 <div className="project-text-content">
-                                    커뮤니티 + 미니게임 웹사이트라는 주제의 웹 사이트입니다. <br />
+                                    커뮤니티 웹사이트 주제로 진행한 웹 개발 프로젝트입니다. <br />
                                     React와 Java/SpringBoot + MySQL로 구축하였으며,
 
                                     FE는 React를 처음 접해 독학으로 공부하며 진행했고
@@ -184,7 +184,7 @@ const pfProject = () => {
                                 <div className="project-text-content">
                                     PE를 좀 더 공부하자는 생각으로 시작한 프로젝트입니다. <br />
                                     TypeScript와 SCSS를 중점으로 공부를 하며 진행했고
-                                    반응형 웹에 신경을 쓰며 만들었습니다. <br />
+                                    컴포넌트 분리와 반응형 웹에 신경쓰며 만들었습니다. <br />
                                     이곳에선 다른 프로젝트들을 소개해주며, 다양한 CSS를 직접 적용, 실습하고 있습니다. <br />
                                     <div className="content-item-list">
                                         <div className="content-item">
