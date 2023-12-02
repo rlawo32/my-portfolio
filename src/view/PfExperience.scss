@@ -55,26 +55,38 @@
           .experience-item {
             margin: auto;
             padding-left: 10px;
+            @media all and (max-width: 550px) {
+              height: 90px;
+            }
             height: 110px;
             color: black;
             text-align: left;
             border-left: 3px solid black;
 
             .item-title {
+              @media all and (max-width: 550px) {
+                font-size: 25px;
+              }
               font-size: 35px;
               font-weight: bold;
               margin-bottom: 15px;
             }
 
             .item-date {
-              font-size: 18px;
+              @media all and (max-width: 550px) {
+                font-size: 14px;
+              }
+              font-size: 16px;
               font-weight: bolder;
               color: #163040;
               margin-bottom: 15px;
             }
 
             .item-content {
-              font-size: 20px;
+              @media all and (max-width: 550px) {
+                font-size: 15px;
+              }
+              font-size: 18px;
               color: white;
               opacity: 0.8;
             }
@@ -140,7 +152,7 @@
             margin: auto;
             padding-left: 10px;
             height: 110px;
-            width: 350px !important;
+            width: 395px !important;
             color: black;
             text-align: left;
             border-left: 3px solid black;
