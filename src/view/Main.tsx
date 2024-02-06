@@ -34,7 +34,7 @@ const Main = () => {
                 }
             })
 
-        }, {threshold: 0.35})
+        }, {threshold: 0.12})
 
         pfArray.current.forEach((ref: any) => {
             scrollObserver.observe(ref);
