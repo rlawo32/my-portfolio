@@ -26,14 +26,10 @@ const pfAbout = () => {
                     <div className="portfolio-about-box">
                         <div className="about-text-key">목표를 향한 계획이 있나요?</div>
                         <p className="about-text-value">
-                            <div style={{marginBottom: '10px'}}>
-                                풀스택 개발자가 되기 위해 우선 꾸준히 다양한 프로젝트를 진행해보며,
-                                여러 언어들과 기술들을 직접 다뤄보고 내 것으로 만들고
-                            </div>
-                            <div>
-                                기업에 들어가 실무에서의 다양한 포지션을 경험해보는 것을 통해
-                                풀스택 기량을 쌓을 수 있을거라 생각합니다.
-                            </div>
+                            풀스택 개발자가 되기 위해 우선 꾸준히 다양한 프로젝트를 진행해보며,
+                            여러 언어들과 기술들을 직접 다뤄보고 내 것으로 만들고 <br />
+                            기업에 들어가 실무에서의 다양한 포지션을 경험해보는 것을 통해
+                            풀스택 기량을 쌓을 수 있을거라 생각합니다.
                         </p>
                     </div>
                     <div className="portfolio-about-box">
