@@ -201,7 +201,7 @@ const pfProject = () => {
                             </div>
                             <div className="project-text-body">
                                 <div className="project-text-content">
-                                    PE를 좀 더 공부하자는 생각으로 시작한 프로젝트입니다. <br />
+                                    FE를 좀 더 공부하자는 생각으로 시작한 프로젝트입니다. <br />
                                     TypeScript와 SCSS를 중점으로 공부를 하며 진행했고
                                     컴포넌트 분리와 반응형 웹에 신경쓰며 만들었습니다. <br />
                                     이곳에선 다른 프로젝트들을 소개해주며, 다양한 CSS를 직접 적용, 실습하고 있습니다. <br />
@@ -276,11 +276,10 @@ const pfProject = () => {
                             <div className="project-text-body">
                                 <div className="project-text-content">
                                     혼자서 진행했던 첫번째 프로젝트의 정체성과 주제가 뚜렷하지 않아 새로 진행한
-                                    <br />
                                     개인프로젝트입니다. 문화센터 웹사이트를 주제로 정하여 진행했습니다. <br />
-                                    기존 Js에서 Ts로 변경하여 진행하였으며, 다양하고 새로운 기술들과 Api들을 <br />
+                                    기존 Js에서 Ts로 변경하여 진행하였으며, 다양하고 새로운 기술들과 Api들을
                                     도입하여 웹사이트를 구현하였습니다. <br />
-                                    FE는 Netlify를 통해 BE는 CloudType를 통해 따로 배포하였습니다.
+                                    FE는 Netlify를 통해 BE와 DB는 CloudType를 통해 따로 배포하였습니다.
                                 </div>
 
                                 <div className="content-item-list">
