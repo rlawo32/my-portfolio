@@ -116,7 +116,7 @@ const pfProject = () => {
                                         ReP
                                     </div>
                                     <div className="project-text-date">
-                                        2023.07 ~ -ing &nbsp;/&nbsp; 1명
+                                        2023.07 ~ 2023.11 &nbsp;/&nbsp; 1명
                                     </div>
                                 </div>
                                 <div className="project-text-skill">
@@ -126,11 +126,11 @@ const pfProject = () => {
                             <div className="project-text-body">
                                 <div className="project-text-content">
                                     커뮤니티 웹사이트 주제로 진행한 웹 개발 프로젝트입니다. <br />
+                                    사실상 낙서장 느낌의 웹페이지로 이전 회사 퇴사 후 3개월간 공백기 뒤에 진행한 프로젝트였던지라
+                                    개발에 대한 재적응과 새로 접해보는 React를 공부하는 겸해서 생각나는대로 기능을 구현해놓은 웹사이트입니다. <br />
                                     React와 Java/SpringBoot + MySQL로 구축하였으며,
 
-                                    FE는 React를 처음 접해 독학으로 공부하며 진행했고
-                                    Spring Security 사용하여 웹 보안에 신경쓰며 만들었습니다. <br />
-                                    또한, AWS S3를 사용하여 원활한 이미지 업로드를 구현하였습니다.
+                                    React는 독학으로 공부하며 진행했고 Spring Security와 Spring JPA, AWS S3, JWT 등 저로써는 처음 접해보는 여러 기능들을 사용하여 구현해보았습니다.
                                 </div>
 
                                 <div className="content-item-list">
@@ -201,8 +201,9 @@ const pfProject = () => {
                             </div>
                             <div className="project-text-body">
                                 <div className="project-text-content">
-                                    FE를 좀 더 공부하자는 생각으로 시작한 프로젝트입니다. <br />
-                                    TypeScript와 SCSS를 중점으로 공부를 하며 진행했고
+                                    FE와 퍼블리싱에 대해 좀 더 공부하자는 생각으로 시작한 프로젝트입니다. <br />
+                                    사실상 개인 포트폴리오 겸 블로그 개념으로 계획을 하여 시작을 하게 되었고
+                                    TypeScript와 SCSS를 중점으로 공부를 하며 진행했으며,
                                     컴포넌트 분리와 반응형 웹에 신경쓰며 만들었습니다. <br />
                                     이곳에선 다른 프로젝트들을 소개해주며, 다양한 CSS를 직접 적용, 실습하고 있습니다. <br />
                                 </div>
@@ -279,7 +280,8 @@ const pfProject = () => {
                                     개인프로젝트입니다. 문화센터 웹사이트를 주제로 정하여 진행했습니다. <br />
                                     기존 Js에서 Ts로 변경하여 진행하였으며, 다양하고 새로운 기술들과 Api들을
                                     도입하여 웹사이트를 구현하였습니다. <br />
-                                    FE는 Netlify를 통해 BE와 DB는 CloudType를 통해 따로 배포하였습니다.
+                                    FE는 Netlify를 통해 BE와 DB는 CloudType를 통해 따로 배포하였습니다.<br />
+                                    처음 계획했던대로 프로젝트는 완성이 된 상태이며, 현재는 오류가 있는지 체크하면서 웹사이트 성능을 올려보려 공부하면서 테스트 중입니다.
                                 </div>
 
                                 <div className="content-item-list">
@@ -293,10 +295,7 @@ const pfProject = () => {
                                         Styled-Component를 통해 다크모드 구현
                                     </div>
                                     <div className="content-item">
-                                        Zustand를 사용하여 React 전역 상태 관리
-                                    </div>
-                                    <div className="content-item">
-                                        TossPayment, Kakao Map Api 사용하여 구현
+                                        Zustand를 사용하여 전역 상태 관리
                                     </div>
                                 </div>
 
