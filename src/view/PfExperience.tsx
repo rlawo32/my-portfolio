@@ -7,9 +7,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const pfExperience = () => {
-    const sliderItemTitle:any = ['씨앤비플러스', '국가평생교육진흥원', '구디아카데미 45기', '울산과학대 컴퓨터정보학부'];
-    const sliderItemDate:any = ['2022-09 ~ 2023-03', '2022-10 ~ 2023-01', '2022-01 ~ 2022-07', '2016-03 ~ 2022-02'];
-    const sliderItemContent:any = ['그룹웨어 리팩토링/유지보수', '학사 취득을 위한 학점은행제 이수', 'Java, JS, 웹 개발 등을 학습했습니다.', ''];
+    const sliderItemTitle:any = ['한국모바일인증', '씨앤비플러스', '국가평생교육진흥원', '구디아카데미 45기', '울산과학대 컴퓨터정보학부'];
+    const sliderItemDate:any = ['2024-03 ~ ing', '2022-09 ~ 2023-03', '2022-10 ~ 2023-01', '2022-01 ~ 2022-07', '2016-03 ~ 2022-02'];
+    const sliderItemContent:any = ['IT기술지원 및 개발', '그룹웨어 리팩토링/유지보수', '학사 취득을 위한 학점은행제 이수', 'Java, JS, 웹 개발 등을 학습했습니다.', ''];
     const experienceSlider = () => {
 
         const sliderList:any = [];
